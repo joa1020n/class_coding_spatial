@@ -1,0 +1,14 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
+
+/* green: #00D200 */
+ 
+body{
+font-family:"Roboto",sans-serif;
+}
+
+.neon{
+color:#00D200;
+}
+.register{
+    text-transform: uppercase;
+    }

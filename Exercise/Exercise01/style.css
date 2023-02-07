@@ -1,0 +1,28 @@
+p {
+    color: black;
+    font-family: 'Cormorant Garamond';
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: lowercase;
+    text-decoration: none;
+    text-align: left;
+    }
+
+h1{
+    font-family: 'Cormorant Garamond', Bold 700;
+    text-align: center;
+    font-size: 10ch;
+    }
+
+h2{
+    font-family: 'Cormorant Garamond', Bold 700;
+    text-align: left;
+    font-size: 2ch;
+
+    }
+
+.lead {font-style:italic;}
+
+.titleimage{
+    background-image: url("https://raw.githubusercontent.com/celestelayne/bug-free-meme/main/exercises/starter_code_lesson_1/cookie_recipe/cookies.jpg");
+}
