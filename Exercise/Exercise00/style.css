@@ -6,9 +6,47 @@ body{
 font-family:"Roboto",sans-serif;
 }
 
+h4{
+    font-size: 40px;
+}
+
+.title{
+    background-color: #00D200;
+    position: relative;
+    top:100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+.container{
+background-color: aqua;
+
+}
+
+p{
+font-size: 20px;
+}
+
 .neon{
 color:#00D200;
 }
 .register{
     text-transform: uppercase;
     }
+
+.left{
+    position: relative;
+    top:100px;
+    width:60%;
+    height:100%;
+    float:left;
+}
+
+.right{
+    position: relative;
+    top:100px;
+    width:40%;
+    height:100%;
+    float:left;
+}

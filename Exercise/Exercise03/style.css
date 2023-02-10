@@ -1,0 +1,21 @@
+body{
+background-color: chartreuse;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+p{
+    font-style: ExtraLight 200;
+}
+.container{
+    background-color: red;
+    margin: 30px 100px;
+}
+
+.pullquote{
+    background-color: yellow;
+    font-size: 100;
+    margin: 30px 30px;
+
+
+}
