@@ -1,0 +1,53 @@
+body{
+    font-family: 'Glegoo', serif;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    }
+
+.container0{
+    display: flex;
+    justify-content: center;
+    height:900px;
+    width: 100%;
+    flex-direction: row;
+    align-items:center;
+    background-color:#ffffff;
+    position: relative;
+    justify-content:space-evenly;
+
+}
+
+.container1{
+    background-color: red;
+    height:200px;
+    position: relative;
+    width: 200px;
+    left:100px;
+    /* right:10px; */
+}
+.container2{
+    background-color: purple;
+    height:200px;
+    position: relative;
+    width: 200px;
+}
+.container3{
+    background-color: rgb(56, 240, 157);
+    height:200px;
+    position: relative;
+    width: 200px;
+    /* left:10px; */
+    right:100px;
+}
+
+h2{
+    /* background-color: aqua; */
+    font-size: 20px;
+    color:white;
+    text-align:center;
+    position: relative;
+    top:50%;
+    transform: translate(0,-32px);
+}
