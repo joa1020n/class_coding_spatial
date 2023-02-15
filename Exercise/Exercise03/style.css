@@ -1,7 +1,11 @@
 body{
-background-color: white;
-font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
 
+}
+
+*{
+    box-sizing: border-box;
 }
 
 h2{
@@ -17,46 +21,55 @@ p{
 
 .imgcontainer{
     margin: 30px 100px;
-    margin-right: 500px;
+    /* margin-right: 100px; */
     /* display: block; */
     text-align: right;
     /* float:right; */
+    overflow:auto;
 }
 
 img{
-    width:600px;
+    width:30%;
 
 }
 p1{
     font-family: 'Inconsolata', monospace;
-    font-size:60px;
     color:blue;
 }
 
 .title{
     margin: 30px 100px;
-    margin-right: 500px;
+    /* margin-right: 500px; */
     text-align: right;
 }
 
 .subtitle{
     margin: 30px 100px;
-    margin-right: 500px;
+    /* margin-right: 500px; */
     text-align: right;
 }
 .container{
     background-color: white;
     margin-top: 30px;
-    margin-left: 200px;
+    margin-left: 120px;
     margin-bottom: 30px;
-    margin-right: 750px;
+    margin-right: 50px;
 }
 
 .pullquote{
     background-color: white;
-    font-size: 50px;
-    margin: 30px 200px;
+    font-size: 30px;
+    margin: 30px 100px;
+}
+
+.languagecontainer{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+.item{
 
 
 }
-
