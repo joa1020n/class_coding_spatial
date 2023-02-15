@@ -1,21 +1,62 @@
 body{
-background-color: chartreuse;
+background-color: white;
 font-family: 'Montserrat', sans-serif;
 
 }
 
+h2{
+    font-size:  60px; 
+    font-style: 400;
+    color:blue;
+}
+
 p{
     font-style: ExtraLight 200;
+    font-size: 20px;
+}
+
+.imgcontainer{
+    margin: 30px 100px;
+    margin-right: 500px;
+    /* display: block; */
+    text-align: right;
+    /* float:right; */
+}
+
+img{
+    width:600px;
+
+}
+p1{
+    font-family: 'Inconsolata', monospace;
+    font-size:60px;
+    color:blue;
+}
+
+.title{
+    margin: 30px 100px;
+    margin-right: 500px;
+    text-align: right;
+}
+
+.subtitle{
+    margin: 30px 100px;
+    margin-right: 500px;
+    text-align: right;
 }
 .container{
-    background-color: red;
-    margin: 30px 100px;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+    margin-right: 750px;
 }
 
 .pullquote{
-    background-color: yellow;
-    font-size: 100;
-    margin: 30px 30px;
+    background-color: white;
+    font-size: 50px;
+    margin: 30px 200px;
 
 
 }
+
