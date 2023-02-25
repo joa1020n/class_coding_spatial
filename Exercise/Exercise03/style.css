@@ -1,9 +1,9 @@
+@media (max-width: 2100px) {
+
 body{
     background-color: white;
     font-family: 'Montserrat', sans-serif;
-
 }
-
 *{
     box-sizing: border-box;
 }
@@ -13,23 +13,26 @@ h2{
     font-style: 400;
     color:blue;
 }
-
+h3{
+    font-size:  40px; 
+    font-style: 400;
+    color:black;
+}
 p{
     font-style: ExtraLight 200;
     font-size: 20px;
 }
 
 .imgcontainer{
-    margin: 30px 100px;
-    /* margin-right: 100px; */
+    margin: 20px 100px;
+    margin-bottom: 100px; 
     /* display: block; */
     text-align: right;
-    /* float:right; */
     overflow:auto;
 }
 
 img{
-    width:30%;
+    width:40%;
 
 }
 p1{
@@ -68,8 +71,73 @@ p1{
     justify-content: space-between;
     margin-right: 100px;
 }
+}
 
-.item{
+@media (max-width: 1200px) {
 
-
+    body{
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    
+    h2{
+        font-size:  30px; 
+        font-style: 400;
+        color:blue;
+    }
+    h3{
+        font-size:  15px; 
+        font-style: 400;
+        color:black;
+    }
+    p{
+        font-style: ExtraLight 200;
+        font-size: 15px;
+    }
+    .imgcontainer{
+        margin: 20px 20px;
+        margin-bottom: 100px; 
+        /* display: block; */
+        text-align: right;
+        overflow:auto;
+    }    
+    img{
+        width:100%;
+    }
+    .languagecontainer{
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-between;
+        margin-right: 100px;
+    }
+    p1{
+        font-family: 'Inconsolata', monospace;
+        color:blue;
+    }
+    .pullquote{
+        background-color: white;
+        font-size: 20px;
+        margin: 30px 60px;
+    }
+    .title{
+        margin: 30px 100px;
+        /* margin-right: 500px; */
+        text-align: right;
+    }
+    
+    .subtitle{
+        margin: 30px 100px;
+        /* margin-right: 500px; */
+        text-align: right;
+    }
+    .container{
+        background-color: white;
+        margin-top: 30px;
+        margin-left: 60px;
+        margin-bottom: 30px;
+        margin-right: 50px;
+    }
 }
