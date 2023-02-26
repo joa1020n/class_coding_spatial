@@ -1,0 +1,181 @@
+@media (max-width: 10000px) {
+
+body{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+h2{
+    font-size:  60px; 
+    font-style: 400;
+    color:blue;
+}
+h3{
+    font-size:  40px; 
+    font-style: 400;
+    color:black;
+}
+
+p{
+    font-family: 'Inconsolata', monospace;
+    font-style: ExtraLight 200;
+    font-size: 20px;
+}
+
+.imgcontainer{
+    margin: 20px 120px;
+    margin-bottom: 100px; 
+    /* display: block; */
+    text-align: right;
+    overflow: auto;
+}
+
+img{
+    width:768px;
+}
+
+.languagecontainer{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    gap:15%;
+    margin: 30px 5%;
+}
+
+.pullquote{
+    font-family: 'Inconsolata', monospace;
+    color:blue;
+    font-size: 30px;
+    line-height:40px;
+    display:block;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+mark{
+    background-color: blue;
+    color:white;
+}
+
+.title{
+    margin: 30px 100px;
+    /* margin-right: 500px; */
+    text-align: right;
+}
+
+.subtitle{
+    margin: 30px 100px;
+    /* margin-right: 500px; */
+    text-align: right;
+}
+.container{
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    border-left-style:solid;
+    border-left-color: blue;
+    border-left-width: 3px;
+    padding-left:30px;
+}
+.footnote{
+    position:fixed;
+    left: 100px;
+    bottom:0px;
+    color:white;
+    background-color: blue;
+}
+.spanish{
+    opacity:70%;
+}
+
+}
+
+@media (max-width: 1200px) {
+
+    body{
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    *{
+        box-sizing: border-box;
+    }
+    
+    h2{
+        font-size:  30px; 
+        font-style: 400;
+        color:blue;
+    }
+
+    h3{
+        font-size:  15px; 
+        font-style: 400;
+        color:black;
+    }
+
+    p{
+        font-family: 'Inconsolata', monospace;
+        font-style: ExtraLight 200;
+        font-size: 20px;
+    }
+
+    .imgcontainer{
+        margin: 20px 10%;
+        margin-bottom: 100px; 
+        text-align: right;
+        overflow:auto;
+    } 
+
+    img{
+        width:80%;
+    }
+
+    .languagecontainer{
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-between;
+        margin-right: 100px;
+    }
+    
+    .pullquote{
+        background-color: white;
+        font-size: 30px;       
+        margin: 30px 60px;
+        display: block;
+        line-height:30px;
+    }
+
+    .title{
+        margin: 30px 10%;
+        /* margin-right: 500px; */
+        text-align: right;
+    }
+    
+    .subtitle{
+        margin: 30px 10%;
+        /* margin-right: 500px; */
+        text-align: right;
+    }
+
+    .container{
+        background-color: white;
+        margin-top: 30px;
+        margin-left: 60px;
+        margin-bottom: 30px;
+        margin-right: 50px;
+    }
+
+    .spanish{
+        color:darkgrey;
+    }
+
+}
