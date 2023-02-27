@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 0;
+    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: white;
+}
+
+p{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+}
+header{
+    margin: 0px 0px;
+    width:100%;
+    background-color: white;
+
+}
+
+.container{
+    margin: 0 2.5vw;
+    display: flex;
+    justify-content: space-between;
+    height:30vw;
+    /* display: inline-block; */
+    border-bottom-style: solid;
+    border-bottom-color: #212529;
+    border-bottom-width: 2px;
+}
+
+path{
+    z-index: 10;
+    /* fill-opacity:1; */
+    width:22%;
+    height:100%;
+    fill:#212529;
+}
+
+.colon{
+    fill:black;
+    width: 10%;
+}
+
+subheader{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 2.5vw ;
+}
+
+subtitle{
+    width: 80%
+
+}
+
+wrapper{
+    display:flex;
+    flex-direction: row;
+    margin: 0 3vw;
+    background-color: aqua;
+}
+
+contentitem{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+foldericon{
+    display:block;
+    width:100%;
+}
+contentname{
+    height: 80%;
+}
+.contentname{
+    text-align:center;
+}
+
