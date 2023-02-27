@@ -1,6 +1,14 @@
 body{
+    display: flex;
     font-family: 'Glegoo', serif;
     margin: 0 0;
+    background-image: url("Assets/img/20230210_Cover.jpg");
+    background-size: cover; 
+    height: 1654.67px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .uppercase {
@@ -12,17 +20,14 @@ body{
 }
 
 .container0{
-    margin-top: 0px;
+    /* margin: 0px; */
     display: flex;
-    background-image: url("Assets/img/20230210_Cover.jpg");
-    background-size:cover;
     /* background-repeat: no-repeat; */
-    height: 1654.67px;
-    width: 100%;
+    width: 65%;
     flex-direction: row;
-    background-color:#ffffff;
+    background-color:transparent;
     position: relative;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items:center;
 }
 
