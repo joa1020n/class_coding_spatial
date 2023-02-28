@@ -62,26 +62,44 @@ subtitle{
 }
 
 wrapper{
-    display:flex;
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 0 3vw;
     background-color: aqua;
+    justify-content:flex-start;
+    align-content:flex-start;
+    gap:20px;
 }
 
 contentitem{
     display: flex;
-    flex-direction: column;
-    width: 40%;
+    flex-direction: column-reverse;
+    width:fit-content;
 }
 
-foldericon{
+.foldericon{
     display:block;
     width:100%;
 }
-contentname{
-    height: 80%;
+
+.txticon{
+    display:block;
+    width:100%;
 }
-.contentname{
+
+.foldername{
+    height: 40%;
+    background-color: white;
     text-align:center;
+    position:relative;
+}
+
+.txtname{
+    height: 40%;
+    width:100%;
+    background-color: white;
+    text-align:center;
+
 }
 
