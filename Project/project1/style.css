@@ -45,10 +45,21 @@ path{
     fill:#212529;
 }
 
+@keyframes twinkle {
+    0% {opacity: 0%;}
+    50% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+
 .colon{
     fill:black;
     width: 10%;
+    animation-name: twinkle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+
 
 subheader{
     display: flex;
@@ -69,7 +80,7 @@ wrapper{
     background-color: white;
     justify-content:flex-start;
     align-content:flex-start;
-    gap:20px;
+    gap:5%;
 }
 
 contentitem{
