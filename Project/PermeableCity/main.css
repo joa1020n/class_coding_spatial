@@ -5,15 +5,24 @@ font-family: 'Rubik Pixels', cursive;
  @media (max-width: 10000px) {
 
 .noChoiceBody{
+    margin:0 0;
+    height:100vh;
     background-color:#f1efdd;
 }
 
-nav{
-    margin:0 60px;
-    /* background-color:bisque; */
-    height: 60px;
+header{
+    position:absolute;
+    /* background-color: white; */
+    top:0;
+    right:60px;
+    /* left:0; */
+    /* margin:0 60px; */
+    height: 5vh;
+    width:100vw; 
+
     display: flex;
     justify-content: flex-end;
+    flex-direction: row;
     align-items: center;
     gap:120px;
 }
@@ -22,45 +31,99 @@ nav{
     color:white;
     font-family: 'Montserrat', sans-serif;
     font-style:200;
-    font-size:20px;
+    font-size:15px;
     text-decoration-line: none;
 }
+
+/* .h1 a:hover {
+    background-color: grey;
+    color: #a28244;
+  } */
 
 .h2{
     font-family: 'Montserrat', sans-serif;
     font-size:120px;
-}
+
+    margin-top:0;
+    margin-left: 30px;
+    margin-bottom: 0px;
+
+    padding:0 0;
+    }
 
 .h3{
     font-family: 'Rubik Pixels', cursive;
     font-size:120px;
+
+    margin-top:0;
+    margin-left: 30px;
+    margin-bottom: 0px;
+
+    padding:0 0;
+    }
+
+.p1{
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+    margin-top:0;
+    margin-left: 0px;
+    margin-bottom: 0px;
+
+    text-decoration-line: none;
+    color:#59594f;
 }
 
 .CoverContainer{
-    margin:0 0;
-    /* height:1080px;
-    width:1920px; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
     position: fixed;
-    top:0;
-    right:0;
-    
+    bottom:5vh;
+    height:90vh;
+    width:100vw;
+    margin:0 0 0 0;
 
-}
-.CoverItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: bottom;
 
 }
 
 .CoverText{
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height:90vh;
+    margin-left:60px;
+}
+
+.titleText{
+    margin-top:0;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+.locationText{
+    position:relative;
+    bottom: 90px;
+    left:30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:60px;
+    align-items: center;
 
 }
 
+.description{
+    margin-left: 20px;
+
+
+}
 .CoverImg{
-    height:1080px;
-    size-adjust:inherit;
+    position:relative;
+    height:90vh;
+    width:90vh;
+    right:30px;
+    bottom:0;
+    /* size-adjust:inherit; */
 }
 }
