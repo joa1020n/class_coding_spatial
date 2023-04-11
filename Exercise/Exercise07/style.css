@@ -1,0 +1,60 @@
+@media (max-width: 10000px) {
+
+    body{
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    nav{
+        height: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .p1{
+        font-family: 'Inconsolata', monospace;
+        font-style: ExtraLight 200;
+        font-size: 30px;
+    }
+
+    div{
+        margin: 5px;
+    }
+
+    .main{
+        height:1200px;
+        /* width:90%; */
+        display: flex;
+        /* position:center; */
+        align-items:center;
+        flex-direction: column ;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        /* flex-wrap: no-wrap; */
+    }
+
+    p{
+        font-family: 'Inconsolata', monospace;
+        font-style: ExtraLight 200;
+        font-size: 40px;
+    }
+    
+    button{
+        font-family: 'Inconsolata', monospace;
+        font-style: ExtraLight 200;
+        font-size: 30px;
+        border-width: 0px;
+        width:20%;
+
+        /* position: center; */
+        }
+
+    h1{
+        font-family: 'Inconsolata', monospace;
+        font-style: ExtraLight 200;
+        font-size: 40px;
+    }
+    
+    }
