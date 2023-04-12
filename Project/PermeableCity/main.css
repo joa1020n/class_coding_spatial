@@ -19,6 +19,7 @@ header{
     /* margin:0 60px; */
     height: 5vh;
     width:100vw; 
+    z-index: 1;
 
     display: flex;
     justify-content: flex-end;
@@ -118,12 +119,35 @@ header{
 
 
 }
-.CoverImg{
-    position:relative;
+.CoverImg
+{   position:relative;
     height:90vh;
     width:90vh;
     right:30px;
     bottom:0;
     /* size-adjust:inherit; */
 }
+
+#canvas {
+    width: 90vh;
+    height: 90vh;
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+#canvas .path {
+    position: absolute;
+    border-radius: 3px;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  #canvas .path.active {
+    opacity: 1;
+  }
+
+
 }
