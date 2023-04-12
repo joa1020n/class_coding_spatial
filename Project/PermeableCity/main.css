@@ -7,19 +7,21 @@ font-family: 'Rubik Pixels', cursive;
 .noChoiceBody{
     margin:0 0;
     height:100vh;
-    background-color:#f1efdd;
+    background-color:#f2f1df;
+    /* background-image: url(../PermeableCity/Assets/Sign/BackgroundImg_01.png);
+    background-repeat: repeat; */
 }
 
 header{
     position:absolute;
     /* background-color: white; */
     top:0;
-    right:60px;
+    right:120px;
     /* left:0; */
     /* margin:0 60px; */
     height: 5vh;
     width:100vw; 
-    z-index: 1;
+    z-index: 9999;
 
     display: flex;
     justify-content: flex-end;
@@ -54,7 +56,7 @@ header{
 
 .h3{
     font-family: 'Rubik Pixels', cursive;
-    font-size:120px;
+    font-size:150px;
 
     margin-top:0;
     margin-left: 30px;
@@ -62,6 +64,28 @@ header{
 
     padding:0 0;
     }
+
+.h4{
+    font-family: 'Rubik Pixels', cursive;
+    font-size:90px;
+    
+    margin-top: 60px;
+    margin-bottom: 0px;
+
+    
+    padding:0 0;
+}   
+
+.sub1{
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+    margin-top:0;
+    margin-left: 0px;
+    margin-bottom: 0px;
+
+    text-decoration-line: underline;
+    color:#59594f;
+}
 
 .p1{
     font-family: 'Montserrat', sans-serif;
@@ -74,26 +98,78 @@ header{
     color:#59594f;
 }
 
-.CoverContainer{
+.p2{
+    font-family: 'Montserrat', sans-serif;
+    font-size:30px;
+    margin-top:0;
+    margin-left: 0px;
+    margin-bottom: 0px;
+
+    text-decoration-line: none;
+    color:#59594f;
+}
+
+.OneImgContainer{
     position: fixed;
-    bottom:5vh;
     height:90vh;
+    bottom:5vh;
     width:100vw;
-    margin:0 0 0 0;
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:0px;
+    margin-right:0px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: bottom;
-
 }
 
+.UpdownContainer{
+    position: fixed;
+    height:80vh;
+    bottom:5vh;
+    width:90vw;
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:0px;
+    margin-right:0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: bottom;
+}
+.threeImgFrame{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: bottom;
+}
+.ImgChildContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: bottom;
+}
+
+
 .CoverText{
+    position:relative;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     height:90vh;
-    margin-left:60px;
+    margin:0;
+    left:60px;
+}
+
+.SubCoverText{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width:60vw;
 }
 
 .titleText{
@@ -101,9 +177,27 @@ header{
     margin-left: 0px;
     margin-bottom: 0px;
 }
+
+.titleTextboxright{
+    margin-top:0;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right:120px;
+    text-align: right;
+}
+
+
+.textboxright{
+    margin-top:0;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right:120px;
+    text-align: right;
+
+}
 .locationText{
     position:relative;
-    bottom: 90px;
+    bottom: 120px;
     left:30px;
 
     display: flex;
@@ -111,43 +205,27 @@ header{
     justify-content: flex-start;
     gap:60px;
     align-items: center;
-
 }
 
 .description{
     margin-left: 20px;
-
-
 }
+
 .CoverImg
 {   position:relative;
-    height:90vh;
-    width:90vh;
-    right:30px;
-    bottom:0;
+    height:98vh;
+    width:98vh;
+    right:0px;
+    bottom:2vh;
     /* size-adjust:inherit; */
 }
 
-#canvas {
-    width: 90vh;
-    height: 90vh;
-    position: relative;
-    top: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-#canvas .path {
-    position: absolute;
-    border-radius: 3px;
-    background-color: white;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  #canvas .path.active {
-    opacity: 1;
-  }
+.footerLocation{
+    position:absolute;
+    z-index:9999;
+    left:60px;
+    bottom:5vh;
+}
 
 
 }
