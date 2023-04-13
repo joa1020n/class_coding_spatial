@@ -4,6 +4,7 @@ font-family: 'Rubik Pixels', cursive;
  */
  @media (max-width: 10000px) {
 
+/* body setting */
 .noChoiceBody{
     margin:0 0;
     height:100vh;
@@ -12,15 +13,17 @@ font-family: 'Rubik Pixels', cursive;
     background-repeat: repeat; */
 }
 
+/* header and footer */
 header{
-    position:absolute;
-    /* background-color: white; */
+    position: fixed ;
+    background-color: white;
     top:0;
-    right:120px;
-    /* left:0; */
-    /* margin:0 60px; */
-    height: 5vh;
-    width:100vw; 
+    margin:0;
+    height: 10vh;
+    width:90vw; 
+    padding-top: 0;
+    padding-left:5vw;
+    padding-right:5vw;
     z-index: 9999;
 
     display: flex;
@@ -30,25 +33,45 @@ header{
     gap:120px;
 }
 
+ButtonContainer{
+    position: fixed ;
+    z-index:9999;
+    width:96vw;
+    left:0;
+    bottom:5vh;
+    margin:0;
+    padding:0;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap:90px;
+}
+
+ ButtonContainer a:hover {
+    background-color: #ed9303;
+  }
+
+
+/* fonts */
+
 .h1{
-    color:white;
+    color:black;
     font-family: 'Montserrat', sans-serif;
     font-style:200;
-    font-size:15px;
+    font-size:30px;
     text-decoration-line: none;
 }
 
-/* .h1 a:hover {
-    background-color: grey;
-    color: #a28244;
-  } */
 
 .h2{
     font-family: 'Montserrat', sans-serif;
-    font-size:120px;
+    font-size:100px;
 
     margin-top:0;
-    margin-left: 30px;
+    margin-left: 0px;
     margin-bottom: 0px;
 
     padding:0 0;
@@ -56,14 +79,14 @@ header{
 
 .h3{
     font-family: 'Rubik Pixels', cursive;
-    font-size:150px;
+    font-size:300px;
 
     margin-top:0;
-    margin-left: 30px;
+    margin-left: 0px;
     margin-bottom: 0px;
 
     padding:0 0;
-    }
+}
 
 .h4{
     font-family: 'Rubik Pixels', cursive;
@@ -76,48 +99,72 @@ header{
     padding:0 0;
 }   
 
-.sub1{
+.button{
+    background-color: #00c977;
     font-family: 'Montserrat', sans-serif;
-    font-size:15px;
-    margin-top:0;
-    margin-left: 0px;
-    margin-bottom: 0px;
+    font-size:35px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding:10px 20px;
 
     text-decoration-line: underline;
-    color:#59594f;
+    color:white;
 }
 
 .p1{
     font-family: 'Montserrat', sans-serif;
-    font-size:15px;
-    margin-top:0;
-    margin-left: 0px;
-    margin-bottom: 0px;
+    font-size:30px;
+    margin:0;
 
     text-decoration-line: none;
-    color:#59594f;
+    color:white;
 }
 
 .p2{
     font-family: 'Montserrat', sans-serif;
     font-size:30px;
-    margin-top:0;
-    margin-left: 0px;
-    margin-bottom: 0px;
+    margin:0;
 
-    text-decoration-line: none;
-    color:#59594f;
+    display:flex ;
+    justify-content: flex-start;
+    padding:40px;
+
+    position: relative;
+    bottom:8vh;
+    text-align: center;
+
+    text-decoration-line: 1px;
+    color:white;
+    text-decoration-color: #59594f;
 }
 
-.OneImgContainer{
+/* .p3{
+    font-family: 'Montserrat', sans-serif;
+    font-size:90px;
+    margin:0;
+
+    display:flex ;
+    justify-content: center;
+
+    position: relative;
+    bottom:8vh;
+
+    text-decoration-line: 1px;
+    color:#59594f;
+    text-decoration-color: #59594f;
+
+    z-index: 2;
+} */
+
+/* whole page container */
+.LeftRightContainer{
     position: fixed;
     height:90vh;
-    bottom:5vh;
+    bottom:0;
     width:100vw;
-    margin-top:0;
-    margin-bottom:0;
-    margin-left:0px;
-    margin-right:0px;
+    margin:0;
 
     display: flex;
     flex-direction: row;
@@ -140,29 +187,130 @@ header{
     justify-content: space-between;
     align-items: bottom;
 }
+
+/* image container */
+
+/* three images */
+
 .threeImgFrame{
+    position: absolute;
+    width:90vh;
+    height:270vh;
+    right:0;
+    top:10vh;
+
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: bottom;
-}
-.ImgChildContainer{
-    display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: bottom;
+    gap:0px;
+}
+
+.ImgChild{
+   width: 90vh;
+   height:90vh;
+}
+
+.ImgwithTextAbove{
+    width: 90vh;
 }
 
 
-.CoverText{
-    position:relative;
+/* picker for several images */
+.PickerImgFrame{
+    background-color: white;
+    position: absolute;
+    width:90vh;
+    /* height:270vh; */
+    right:0;
+    top:10vh;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:120px;
+
+}
+
+/* archi part options with text for selection */
+
+
+
+.OptionChild{
+    width: 600px;
+}
+
+/* single image */
+
+ImgSquareContainer{
+
+    position:fixed;
+    height:90vh;
+    width:90vh;
+    bottom:0;
+    right:0;
+    margin:0;
+    padding:0;
+}
+
+/* textbox container */
+
+.TwoTextBox{
+    position:fixed;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     height:90vh;
+    width:100vw;
+    bottom:0;
     margin:0;
-    left:60px;
+
+    z-index: -1 ;
+
 }
+
+/* Individual TextBox */
+
+.LeftDescriptionContainer{
+    background-color: #6fa331;
+    position:relative;
+
+    margin: 0;
+    padding-left: 2vw;
+    padding-right: 5vw;
+    padding-top:60px;
+    height:30vh;
+    align-items: left;
+
+    z-index: 1 ;
+
+
+}
+
+.LeftCoverTitleTextContainer{
+    background-color: #f2f1df;
+    margin:0;
+    position:relative;
+
+    padding-left: 2vw;
+    padding-right: 5vw;
+    padding-top:60px;
+    height:60vh;
+    align-items: left;
+}
+
+/* individual Image */
+
+.CoverImg
+{   position:fixed;
+    height:90vh;
+    width:90vh;
+    right:0px;
+    bottom:0;
+    /* size-adjust:inherit; */
+}
+
+
 
 .SubCoverText{
     display:flex;
@@ -172,11 +320,6 @@ header{
     width:60vw;
 }
 
-.titleText{
-    margin-top:0;
-    margin-left: 0px;
-    margin-bottom: 0px;
-}
 
 .titleTextboxright{
     margin-top:0;
@@ -207,25 +350,62 @@ header{
     align-items: center;
 }
 
-.description{
-    margin-left: 20px;
-}
+/* selection style */
 
-.CoverImg
-{   position:relative;
-    height:98vh;
-    width:98vh;
-    right:0px;
-    bottom:2vh;
-    /* size-adjust:inherit; */
-}
+body {
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  p {
+    margin-top: 20px;
+  }
+  
+  #options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .option {
+    font-family: 'Montserrat', sans-serif;
+    font-size:40px;
+    text-align: center;
 
-.footerLocation{
-    position:absolute;
-    z-index:9999;
-    left:60px;
-    bottom:5vh;
-}
-
+    border: 2px solid black;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .option.selected {
+    background-color: yellow;
+  }
+  
+  button {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  #choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  #choices img {
+    margin: 20px;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  
 
 }

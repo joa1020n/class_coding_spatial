@@ -1,19 +1,50 @@
-#canvas {
-    width: 1000px;
-    height: 1000px;
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    background-color: blue;
+body {
+  font-family: sans-serif;
+}
 
-  }
-  
-  .stroke {
-    position: absolute;
-    border-radius:5px;
-    background-color: white;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    z-index: 9999;
-  }
-  
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+#options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.option {
+  border: 2px solid black;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.option.selected {
+  background-color: yellow;
+}
+
+button {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#choices {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#choices img {
+  margin: 20px;
+  max-width: 300px;
+  max-height: 300px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- title -->
+    <title> Permeasble City Picker </title>
+
+    <!-- font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600;1,900&family=Rubik+Pixels&display=swap" rel="stylesheet">
+   
+    <!-- link to css -->
+    <link rel="stylesheet" href="../main.css">
+
+  </head>
+
+
+
+  <body class="noChoiceBody">
+    <header>
+      <a href="../00_intro/00_1_Disabling Modernity/" class="h1"> Disabling Modernity Studio </a>
+      <a href="../00_intro/00_2_Introduction/" class="h1"> Project Introduction </a>
+      <a href="../00_intro/00_3_About us/" class="h1"> About Us </a>
+    </header>
+  
+        <div class="TwoTextBox">
+            <div class="LeftCoverTitleTextContainer">
+            </div>
+
+            <div class="LeftDescriptionContainer" style="background-color: #ed9303;">
+            <p class="h3" style="color:white" >open yard</p> 
+            </div>
+        </div>
+
+        <div class="PickerImgFrame">
+
+          <div class="OptionwithTextAbove" onclick="selectOption('OpenYard-1')" >
+            <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-01.png"  class="OptionChild" ></img>
+            <p  class="option"> 0% </p>
+          </div>
+
+          <div class="OptionwithTextAbove" class="option" onclick="selectOption('OpenYard-2')" >
+            <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-02.png"  class="OptionChild" ></img>
+            <p > 45% </p>
+          </div>
+
+          <div class="OptionwithTextAbove" class="option"  onclick="selectOption('OpenYard-3')" >
+            <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-03.png"  class="OptionChild" ></img>
+            <p > 50% </p>
+          </div>
+
+          <div class="OptionwithTextAbove">
+            <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-04.png"  class="OptionChild" ></img>
+            <p class="option" onclick="selectOption('OpenYard-4')"  > 50% </p>
+          </div>
+
+          <div class="OptionwithTextAbove">
+            <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-05.png"  class="OptionChild" ></img>
+            <p class="option" onclick="selectOption('OpenYard-5')" > 77% </p>
+          </div>
+
+          <div class="OptionwithTextAbove">
+            <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-06.png"  class="OptionChild" ></img>
+            <p class="option" onclick="selectOption('OpenYard-6')" > 90% </p>
+          </div>
+
+          <div class="OptionwithTextAbove">
+            <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-07.png"  class="OptionChild" ></img>
+            <p class="option" onclick="selectOption('OpenYard-7')" > 100% </p>
+          </div>
+
+        </div>
+
+      <ButtonContainer>
+        <a href="../04_ArchiIntro/04_ArchiIntro.html" class="button"> back </a>       
+        <a onclick="goToNextPage()" class="button"> next step </a>       
+      </ButtonContainer>
+
+      <script src="script.js"></script>
+  
+    </body>
