@@ -1,18 +1,40 @@
-// // Global variables to store user's choices
-// let animalChoice = "";
-// let colorChoice = "";
-// let foodChoice = "";
+// Global variables to store user's choices
+let animalChoice = "";
+let colorChoice = "";
+let foodChoice = "";
 
+
+  
 // Helper function to toggle option selection
 function toggleOptionSelection(option) {
   const choice = document.querySelectorAll('.option');
+
   choice.forEach((opt) => {
+    if (opt) {
+      opt.classList.add('selected');
+    }
     if (opt !== option) {
       opt.classList.remove('selected');
     }
   });
   choice.classList.toggle('selected');
 }
+
+// Get which question is answered
+
+let questionnumber1 = document.getElementById ("animalquestion");
+let questionnumber2 = document.getElementById ("colorquestion");
+let questionnumber3 = document.getElementById ("foodquestion");
+
+
+if (questionnumber1){
+  question = 1;
+} else if (questionnumber2){
+  question = 2;
+} else if (questionnumber3){
+  question = 3;
+}
+
 
 // Function to handle option selection for each question
 function selectOption(choice, question) {
@@ -51,29 +73,29 @@ function goToHomePage() {
   window.location.href = "question1.html";
 }
 
-// Function to display user's choices on answer page
-function showChoices() {
-  document.getElementById("animal-choice").src = "images/${animalChoice}.png";
-  document.getElementById("color-choice").src = "images/${colorChoice}.png";
-  document.getElementById("food-choice").src = "images/${foodChoice}.png";
-}
+// // Function to display user's choices on answer page
+// function showChoices() {
+//   document.getElementById("animal-choice").src = "images/${animalChoice}.png";
+//   document.getElementById("color-choice").src = "images/${colorChoice}.png";
+//   document.getElementById("food-choice").src = "images/${foodChoice}.png";
+// }
 
 ///////
 // get the selected answer
 
-// get the selected animal, color, and city
-var selectedAnimal = document.querySelector(".option");
-var selectedColor = document.querySelector('input[name="color"]:checked').value;
-var selectedCity = document.querySelector('input[name="city"]:checked').value;
+// // get the selected animal, color, and city
+// var selectedAnimal = document.querySelector('input[name="animal"]:checked').value;
+// var selectedColor = document.querySelector('input[name="color"]:checked').value;
+// var selectedCity = document.querySelector('input[name="city"]:checked').value;
 
 // set the corresponding image on the answer page
-var selectedImage = document.getElementById('selected-image');
-if (selectedAnimal === 'dog') {
-  selectedImage.src = "../Experiment/20230409_MaterialforWebpage-01.png";
-} else if (selectedAnimal === 'cat') {
-  selectedImage.src = "../Experiment/20230409_MaterialforWebpage-02.png";
-} else if (selectedAnimal === 'bird') {
-  selectedImage.src = "../Experiment/20230409_MaterialforWebpage-03.png";
+var selectedanimalImage = document.getElementById('animal-choice');
+if (animalChoice === 'dog') {
+  selectedanimalImage.src = "dog.png";
+} else if (animalChoice === 'cat') {
+  selectedanimalImage.src = "cat.png";
+} else if (animalChoice === 'bird') {
+  selectedanimalImage.src = "bird.png";
 } 
 
 if (selectedColor === 'red') {
