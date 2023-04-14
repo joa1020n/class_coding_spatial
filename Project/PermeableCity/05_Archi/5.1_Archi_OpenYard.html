@@ -36,48 +36,72 @@
             </div>
         </div>
 
+<!-- change this part -->
         <div class="PickerImgFrame">
 
-          <div class="OptionwithTextAbove" onclick="selectOption('OpenYard-1')" >
-            <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-01.png"  class="OptionChild" ></img>
-            <p  class="option"> 0% </p>
-          </div>
-
-          <div class="OptionwithTextAbove" class="option" onclick="selectOption('OpenYard-2')" >
-            <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-02.png"  class="OptionChild" ></img>
-            <p > 45% </p>
-          </div>
-
-          <div class="OptionwithTextAbove" class="option"  onclick="selectOption('OpenYard-3')" >
-            <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-03.png"  class="OptionChild" ></img>
-            <p > 50% </p>
+          <div class="OptionwithTextAbove" >
+            <input type="radio" id="OpenYard1" name="OpenYard" value="OpenYard1">
+            <label for="OpenYard1">
+              <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-01.png" class="picframe" alt="OpenYard1">
+              <p class="optiontext"> 0% </p>
+            </label>
           </div>
 
           <div class="OptionwithTextAbove">
-            <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-04.png"  class="OptionChild" ></img>
-            <p class="option" onclick="selectOption('OpenYard-4')"  > 50% </p>
+            <input type="radio" id="OpenYard2" name="OpenYard" value="OpenYard2">
+            <label for="OpenYard2">
+              <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-02.png" class="picframe" alt="OpenYard2">
+              <p class="optiontext"> 45% </p>
+            </label>
           </div>
 
           <div class="OptionwithTextAbove">
-            <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-05.png"  class="OptionChild" ></img>
-            <p class="option" onclick="selectOption('OpenYard-5')" > 77% </p>
+            <input type="radio" id="OpenYard3" name="OpenYard" value="OpenYard3">
+            <label for="OpenYard3">
+              <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-03.png" class="picframe" alt="OpenYard3">
+              <p class="optiontext"> 50% </p>
+            </label>
           </div>
 
           <div class="OptionwithTextAbove">
-            <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-06.png"  class="OptionChild" ></img>
-            <p class="option" onclick="selectOption('OpenYard-6')" > 90% </p>
+            <input type="radio" id="OpenYard4" name="OpenYard" value="OpenYard4">
+            <label for="OpenYard4">
+              <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-04.png" class="picframe" alt="OpenYard4">
+              <p class="optiontext"> 50% </p>
+            </label>
           </div>
 
           <div class="OptionwithTextAbove">
-            <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-07.png"  class="OptionChild" ></img>
-            <p class="option" onclick="selectOption('OpenYard-7')" > 100% </p>
+            <input type="radio" id="OpenYard5" name="OpenYard" value="OpenYard5">
+            <label for="OpenYard5">
+              <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-05.png" class="picframe" alt="OpenYard5">
+              <p class="optiontext"> 77% </p>
+            </label>
+          </div>
+
+          <div class="OptionwithTextAbove">
+            <input type="radio" id="OpenYard6" name="OpenYard" value="OpenYard6">
+            <label for="OpenYard6">
+              <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-06.png" class="picframe" alt="OpenYard6">
+              <p class="optiontext"> 90% </p>
+            </label>
+          </div>
+
+          <div class="OptionwithTextAbove">
+            <input type="radio" id="OpenYard7" name="OpenYard" value="OpenYard7">
+            <label for="OpenYard7">
+              <img src="../Assets/01_OpenYard_Plan/20230409_MaterialforWebpage-07.png" class="picframe" alt="OpenYard7">
+              <p class="optiontext"> 100% </p>
+            </label>
           </div>
 
         </div>
 
       <ButtonContainer>
         <a href="../04_ArchiIntro/04_ArchiIntro.html" class="button"> back </a>       
-        <a onclick="goToNextPage()" class="button"> next step </a>       
+        <a onclick="showOpenYardAnswer()" class="button" style="position:relative; left:40vw;"> Save</a>
+        <a href="../05_Archi/5.2_Archi_InBetween.html" class="button"> next </a>
+
       </ButtonContainer>
 
       <script src="script.js"></script>

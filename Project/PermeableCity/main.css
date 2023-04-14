@@ -13,6 +13,7 @@ font-family: 'Rubik Pixels', cursive;
     background-repeat: repeat; */
 }
 
+
 /* header and footer */
 header{
     position: fixed ;
@@ -111,11 +112,12 @@ ButtonContainer{
 
     text-decoration-line: underline;
     color:white;
+    cursor: pointer;
 }
 
 .p1{
     font-family: 'Montserrat', sans-serif;
-    font-size:30px;
+    font-size:60px;
     margin:0;
 
     text-decoration-line: none;
@@ -228,17 +230,99 @@ ButtonContainer{
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
-    gap:120px;
+    gap:60px;
 
 }
 
 /* archi part options with text for selection */
+ .OptionwithTextAbove{
+    height:fit-content;
+    margin: 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
 
+    border-style: dotted;
+    border-radius: 0;
+    border-color: white;
+    border-width: 12px;
+ }
 
-
-.OptionChild{
-    width: 600px;
+.picframe{
+    width: 15vw;
+    margin: 0;
+    padding: 0;
 }
+
+.picframeforthree{
+    width: 25vw;
+    margin: 0;
+    padding: 0;
+}
+
+ .optiontext{
+    color: #59594f;
+    text-decoration: none;
+    margin: 0 50px;
+    font-size: 50px;
+    /* background-color: white; */
+    display:block;
+    width:fit-content;
+
+    position:relative;
+    bottom:1vh;
+}
+
+ .optiontext:hover{
+    background-position: 5px;
+    background-color: #ed9303;
+    cursor: pointer;
+ }
+
+ .OptionwithTextAbove:hover{
+    border-color: #ed9303;
+
+ }
+
+
+  /* Hide the default radio button */
+  input[type="radio"] {
+    display: none;
+  }
+
+ /* personal space size selection */
+ .PersonalSizeImgFrame{
+    position:fixed;
+    bottom:35vh;
+    height:50vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    gap:5vw;
+    flex-direction: row;
+
+    z-index: 2;
+ }
+
+
+ /* selected part */
+ .selectedContainer{
+    display:flex;
+    justify-content: center;
+    gap:5vw;
+    flex-direction: column;
+ }
+
+ .selectedName{
+    display:flex;
+    justify-content: space-between;
+    gap:5vw;
+    flex-direction: row;
+
+ }
+
 
 /* single image */
 
@@ -388,10 +472,10 @@ body {
     background-color: yellow;
   }
   
-  button {
-    margin-top: 20px;
-    cursor: pointer;
-  }
+
+  
+
+
   
   #choices {
     display: flex;
@@ -409,3 +493,51 @@ body {
   
 
 }
+
+
+ /* Style the custom radio button */
+ /* .radio-button {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+  } */
+
+  /* Style the custom radio button dot */
+  /* .radio-button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    background-color: #fff;
+  } */
+
+  /* Style the custom radio button dot when selected */
+  /* .radio-button input:checked + ::before {
+    background-color: yellow;
+  } */
+
+
+  /* button {
+    border-width: 0;
+    background-color: #00c977;
+    font-family: 'Montserrat', sans-serif;
+    font-size:35px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding:10px 20px;
+
+    text-decoration-line: underline;
+    color:white;
+} */

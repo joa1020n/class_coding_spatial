@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Question 1</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Question 1</h1>
-    <p>Select your favorite animal:</p>
-    <div id="animalquestion">
-      <div  class="option" onclick="selectOption('dog')"> 
-        <!-- <img src="../Experiment/image/dog.png"></img> -->
-        Dog
-      </div>
+<head>
+	<title>Choice 1</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Choice 1</h1>
+	<div>
+		<input type="radio" id="lion" name="animal" value="Lion">
+		<label for="lion">
+			<img src="dog.png" alt="Lion">
+			<p>Lion</p>
+		</label>
+	</div>
+	<div>
+		<input type="radio" id="tiger" name="animal" value="Tiger">
+		<label for="tiger">
+			<img src="cat.png" alt="Tiger">
+			<p>Tiger</p>
+		</label>
+	</div>
+	<div>
+		<input type="radio" id="bear" name="animal" value="Bear">
+		<label for="bear">
+			<img src="bird.png" alt="Bear">
+			<p>Bear</p>
+		</label>
+	</div>
+	<button onclick="showanimalAnswer()">Next</button>
 
-      <div class="option" onclick="selectOption('cat')">
-        <!-- <img src="../Experiment/image/cat.png"></img> -->
-        Cat
-      </div>
+  <a href="question2.html"> next </a>
 
-      <div class="option" onclick="selectOption('bird')">
-        <!-- <img src="../Experiment/image/bird.png"></img> -->
-        Bird
-      </div>
-    </div>
-    <button onclick="goToNextPage()">Next</button>
-
-    <script src="script.js"></script>
-  </body>
+	<script src="script.js"></script>
+</body>
 </html>

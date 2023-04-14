@@ -1,60 +1,66 @@
-// Global variables to store user's choices
-let animalChoice = "";
-let colorChoice = "";
-let foodChoice = "";
+// first question
 
-// Helper function to toggle option selection
-function toggleOptionSelection(option) {
-  const options = document.querySelectorAll('.option');
-  options.forEach((opt) => {
-    if (opt !== option) {
-      opt.classList.remove('selected');
-    }
-  });
-  option.classList.toggle('selected');
+function showOpenYardAnswer() {
+	var selectedOpenYard = document.querySelector('input[name="OpenYard"]:checked');
+	if (selectedOpenYard) {
+		var OpenYardName = selectedOpenYard.nextElementSibling.querySelector('p').innerText;
+		var OpenYardImg = selectedOpenYard.nextElementSibling.querySelector('img').getAttribute('src');
+		localStorage.setItem('OpenYard', OpenYardName);
+		localStorage.setItem('OpenYardImg', OpenYardImg);
+		// window.location.href = 'answer.html';
+	} else {
+		alert('Please select an open yard');
+	}
 }
 
-// Function to handle option selection for each question
-function selectOption(choice, question) {
-  switch (question) {
-    case 1:
-      animalChoice = choice;
-      break;
-    case 2:
-      colorChoice = choice;
-      break;
-    case 3:
-      foodChoice = choice;
-      break;
-  }
-  toggleOptionSelection(event.target);
+var OpenYardName = localStorage.getItem('OpenYard');
+var OpenYardImg = localStorage.getItem('OpenYardImg');
+if (OpenYardName && OpenYardImg) {
+	document.getElementById('OpenYard').innerText = OpenYardName;
+	document.getElementById('OpenYardImg').setAttribute('src', OpenYardImg);
 }
 
-// Function to navigate to next page after selection is made
-function goToNextPage() {
-  const currentPage = window.location.pathname.split("/").pop();
-  switch (currentPage) {
-    case "5.1_Archi_OpenYard.html":
-      window.location.href = "6.Summary.html";
-      break;
-    case "5.2_Archi_InBetween.html":
-      window.location.href = "5.3_Archi_Personal.html";
-      break;
-    case "5.3_Archi_Personal.html":
-      window.location.href = "6.Summary.html";
-      break;
-  }
+
+// second question
+
+function showBetweenAnswer() {
+	var selectedBetween = document.querySelector('input[name="Between"]:checked');
+	if (selectedBetween) {
+		var BetweenName = selectedBetween.nextElementSibling.querySelector('p').innerText;
+		var BetweenImg = selectedBetween.nextElementSibling.querySelector('img').getAttribute('src');
+		localStorage.setItem('Between', BetweenName);
+		localStorage.setItem('BetweenImg', BetweenImg);
+		// window.location.href = 'answer.html';
+	} else {
+		alert('Please select an in-between form');
+	}
 }
 
-// Function to navigate back to home page to start over
-function goToHomePage() {
-  window.location.href = "index.html";
+var BetweenName = localStorage.getItem('Between');
+var BetweenImg = localStorage.getItem('BetweenImg');
+if (BetweenName && BetweenImg) {
+	document.getElementById('Between').innerText = BetweenName;
+	document.getElementById('BetweenImg').setAttribute('src', BetweenImg);
 }
 
-// Function to display user's choices on answer page
-function showChoices() {
-  document.getElementById("animal-choice").src = `images/${animalChoice}.jpg`;
-  document.getElementById("color-choice").src = `images/${colorChoice}.jpg`;
-  document.getElementById("food-choice").src = `images/${foodChoice}.jpg`;
+// third question
+
+function showPersonalAnswer() {
+	var selectedPersonal = document.querySelector('input[name="Personal"]:checked');
+	if (selectedPersonal) {
+		var PersonalName = selectedPersonal.nextElementSibling.querySelector('p').innerText;
+		var PersonalImg = selectedPersonal.nextElementSibling.querySelector('img').getAttribute('src');
+		localStorage.setItem('Personal', PersonalName);
+		localStorage.setItem('PersonalImg', PersonalImg);
+		// window.location.href = 'answer.html';
+	} else {
+		alert('Please select a personal space form');
+	}
 }
 
+var PersonalName = localStorage.getItem('Personal');
+var PersonalImg = localStorage.getItem('PersonalImg');
+if (PersonalName && PersonalImg) {
+	document.getElementById('Personal').innerText = PersonalName;
+	document.getElementById('PersonalImg').setAttribute('src', PersonalImg);
+}

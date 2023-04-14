@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600;1,900&family=Rubik+Pixels&display=swap" rel="stylesheet">
    
     <!-- link to css -->
-    <link rel="stylesheet" href="../../main.css">
-    <script src="./02_MasterIntro.js"></script>
+    <link rel="stylesheet" href="../main.css">
+
   </head>
 
 
@@ -28,38 +28,82 @@
     </header>
   
         <div class="TwoTextBox">
+            <div class="LeftCoverTitleTextContainer">
+            </div>
 
-          <div class="LeftDescriptionContainer" style="background-color: #ed9303;">
-            <p class="h2" style="color:white" >Soil should be at <br> where it is supposed to be.</p> 
-          </div>
-
-          <div class="LeftCoverTitleTextContainer">
-          </div>
-        </div>
-        <div class="threeImgFrame">
-
-          <div class="ImgwithTextAbove">
-            <img src="../Assets/Rendering/Rendering_01.jpg"  class="ImgChild" ></img>
-            <p class="p2"> open yard </p>
-          </div>
-
-          <div class="ImgwithTextAbove">
-            <img src="../Assets/Rendering/Rendering_01.jpg"  class="ImgChild" ></img>
-            <p class="p2"> in-between </p>
-          </div>
-
-          <div class="ImgwithTextAbove">
-            <img src="../Assets/Rendering/Rendering_01.jpg"  class="ImgChild" ></img>
-            <p class="p2"> personal space </p>
-          </div>
-
+            <div class="LeftDescriptionContainer" style="background-color: #ed9303;">
+            <p class="h3" style="color:white" > in-between<br>space</p> 
+            </div>
         </div>
 
+<!-- change this part -->
+        <div class="PickerImgFrame">
 
-  
+          <div class="OptionwithTextAbove" >
+            <input type="radio" id="Between1" name="Between" value="Between1">
+            <label for="Between1">
+              <img src="../Assets/02_In-Between/20230409_MaterialforWebpage-08.png" class="picframe" alt="Between1">
+              <p class="optiontext"> 0% </p>
+            </label>
+          </div>
+
+          <div class="OptionwithTextAbove">
+            <input type="radio" id="Between2" name="Between" value="Between2">
+            <label for="Between2">
+              <img src="../Assets/02_In-Between/20230409_MaterialforWebpage-09.png" class="picframe" alt="Between2">
+              <p class="optiontext"> 25% </p>
+            </label>
+          </div>
+
+          <div class="OptionwithTextAbove">
+            <input type="radio" id="Between3" name="Between" value="Between3">
+            <label for="Between3">
+              <img src="../Assets/02_In-Between/20230409_MaterialforWebpage-10.png" class="picframe" alt="Between3">
+              <p class="optiontext"> 40% </p>
+            </label>
+          </div>
+
+          <div class="OptionwithTextAbove">
+            <input type="radio" id="Between4" name="Between" value="Between4">
+            <label for="Between4">
+              <img src="../Assets/02_In-Between/20230409_MaterialforWebpage-11.png" class="picframe" alt="Between4">
+              <p class="optiontext"> 50% </p>
+            </label>
+          </div>
+
+          <div class="OptionwithTextAbove">
+            <input type="radio" id="Between5" name="Between" value="Between5">
+            <label for="Between5">
+              <img src="../Assets/02_In-Between/20230409_MaterialforWebpage-12.png" class="picframe" alt="Between5">
+              <p class="optiontext"> 65% </p>
+            </label>
+          </div>
+
+          <div class="OptionwithTextAbove">
+            <input type="radio" id="Between6" name="Between" value="Between6">
+            <label for="Between6">
+              <img src="../Assets/02_In-Between/20230409_MaterialforWebpage-13.png" class="picframe" alt="Between6">
+              <p class="optiontext"> 75% </p>
+            </label>
+          </div>
+
+          <div class="OptionwithTextAbove">
+            <input type="radio" id="Between7" name="Between" value="Between7">
+            <label for="Between7">
+              <img src="../Assets/02_In-Between/20230409_MaterialforWebpage-14.png" class="picframe" alt="Between7">
+              <p class="optiontext"> 100% </p>
+            </label>
+          </div>
+
+        </div>
+
       <ButtonContainer>
-        <a href="../5.2_Archi_InBetween/5.2_Archi_InBetween.html" class="button"> back </a>       
-        <a href="../5.3_Archi_Personal/5.3_Archi_Personal.html" class="button"> next step </a>       
+        <a href="../05_Archi/5.1_Archi_OpenYard.html" class="button"> back </a>       
+        <a onclick="showBetweenAnswer()" class="button" style="position:relative; left:40vw;"> Save</a>
+        <a href="../05_Archi/5.3_Archi_Personal.html" class="button"> next </a>
+
       </ButtonContainer>
+
+      <script src="script.js"></script>
   
     </body>

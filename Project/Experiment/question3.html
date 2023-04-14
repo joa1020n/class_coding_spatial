@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Question 3</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Question 3</h1>
-    <p>Select your favorite food:</p>
-    <div id="foodquestion">
-      <div class="option" onclick="selectOption('pizza')">Pizza</div>
-      <div class="option" onclick="selectOption('hamburger')">Hamburger</div>
-      <div class="option" onclick="selectOption('sushi')">Sushi</div>
-    </div>
-    <button onclick="goToNextPage()">Next</button>
-    <script src="script.js"></script>
-  </body>
+<head>
+	<title>Choice 3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Choice 3</h1>
+	<div>
+		<input type="radio" id="pizza" name="food" value="Pizza">
+		<label for="pizza">
+			<img src="dog.png" alt="Pizza">
+			<p>Pizza</p>
+		</label>
+	</div>
+	<div>
+		<input type="radio" id="sushi" name="food" value="Sushi">
+		<label for="sushi">
+			<img src="cat.png" alt="Sushi">
+			<p>Sushi</p>
+		</label>
+	</div>
+	<div>
+		<input type="radio" id="burger" name="food" value="Burger">
+		<label for="burger">
+			<img src="bird.png" alt="Burger">
+			<p>Burger</p>
+		</label>
+	</div>
+
+	<button onclick="showFoodAnswer()">Next</button>
+  <a href="answer.html"> next page</a>
+
+	<script src="script.js"></script>
+</body>
 </html>
