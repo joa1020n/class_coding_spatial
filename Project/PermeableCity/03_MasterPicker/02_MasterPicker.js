@@ -1,9 +1,10 @@
 //Master plan selecting
 window.onload = function() {
 
-var canvas = document.getElementById('myCanvas');
-var ctx = canvas.getContext("2d");
+// var canvas = document.getElementById('myCanvas');
+const rects = document.getElementById('rectContainer');
 
+// var ctx = canvas.getContext("2d");
 
 // Define arrays for X and Y coordinates, width, and height
 
@@ -12,69 +13,146 @@ const Y = [390, 390, 390, 465, 465, 539, 613, 539, 613, 687, 687, 358, 761, 761,
 const width = [22, 101, 101, 88, 167, 233, 101, 22, 101, 233, 191, 299, 88, 233, 167, 59, 88, 35, 191, 88, 233, 101, 125, 22, 101, 233, 101, 59, 88, 233, 167, 22, 101, 101, 101, 101, 13, 44, 233, 101, 125, 88, 35, 76, 84, 88, 67, 44, 84, 88, 101, 101, 44, 67, 84, 121, 68, 142, 88, 233, 233, 22, 101, 101, 101, 101, 59, 88, 101, 101, 101, 125, 22, 101, 233, 101, 59, 88, 233, 101, 125, 22, 101, 101, 167, 102, 93, 59, 125, 44, 93, 93, 44, 44, 93, 299, 101, 101, 58, 167, 101, 48, 101, 233, 39, 167, 101, 160, 125, 101, 101, 101, 101, 101, 150, 167, 35, 167, 299, 233, 101, 74, 125, 44, 233, 101, 108, 125, 35, 299, 101, 299, 167, 101, 90, 167, 167, 101, 101, 101, 101, 93, 125, 101, 101, 101, 101, 167, 101, 110, 59, 101, 69, 133, 101, 35, 101, 101, 40, 267, 67, 101, 101, 101, 101, 101, 101, 62, 133, 101, 101, 101, 101, 95, 67, 101, 233, 160, 133, 101, 129, 44, 93, 167, 121, 101, 192];
 const height = [44, 44, 44, 44, 44, 44, 118, 192, 44, 44, 44, 299, 44, 118, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 192, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 216, 44, 44, 44, 44, 44, 44, 67, 44, 44, 67, 67, 44, 118, 44, 44, 142, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 192, 44, 44, 44, 44, 44, 44, 44, 192, 44, 44, 44, 44, 44, 44, 299, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 142, 216, 44, 44, 67, 44, 67, 67, 67, 142, 67, 67, 44, 267, 44, 67, 67, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 267, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44];
 
-// const colors = ['#000000'];
-// const opacities = [1];
-
-// Define the text to display
-const textCollection = ['Rectangle 1', 'Rectangle 2', 'Rectangle 3'];
 
 var allXPxValues = [];
 var allYPxValues = [];
 var allwidthPxValues = [];
 var allheightPxValues = [];
 
-var allrec = [];
+var XPx;
+var YPx;
+var widthPx;
+var heightPx;
+
+const textCollection = ["This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for nothing, with marshmallow trampoline around.", "This yard is for play ground, with daycare, school and dorm around.", "This yard is for maze, with café, dog park and observation deck around.", "This yard is for sports field, with dog park, sports store and indoor gym around.", "This yard is for nothing, with marshmallow trampoline around.", "This yard is for sports field, with dog park, sports store and indoor gym around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for farming field, with farms and clinic for plants around.", "This yard is for play ground, with daycare, school and dorm around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for pool party, with observation deck, market and watermelon field around.", "This yard is for maze, with café, dog park and observation deck around.", "This yard is for snail farm, with market around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for flying carpet, with café, dog park and observation deck around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for pool party, with observation deck, market and watermelon field around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for test field, with clinic for plants and seed market around.", "This yard is for flying carpet, with café, dog park and observation deck around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for play ground, with daycare, school and dorm around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for pool party, with observation deck, market and watermelon field around.", "This yard is for nothing, with marshmallow trampoline around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for farming field, with farms and clinic for plants around.", "This yard is for sports field, with dog park, sports store and indoor gym around.", "This yard is for nothing, with marshmallow trampoline around.", "This yard is for snail farm, with market around.", "This yard is for play ground, with daycare, school and dorm around.", "This yard is for pool party, with observation deck, market and watermelon field around.", "This yard is for maze, with café, dog park and observation deck around.", "This yard is for sports field, with dog park, sports store and indoor gym around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for sports field, with dog park, sports store and indoor gym around.", "This yard is for test field, with clinic for plants and seed market around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for play ground, with daycare, school and dorm around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for nothing, with marshmallow trampoline around.", "This yard is for maze, with café, dog park and observation deck around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for sports field, with dog park, sports store and indoor gym around.", "This yard is for pool party, with observation deck, market and watermelon field around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for sports field, with dog park, sports store and indoor gym around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for maze, with café, dog park and observation deck around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for sports field, with dog park, sports store and indoor gym around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for nothing, with marshmallow trampoline around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for flying carpet, with café, dog park and observation deck around.", "This yard is for sports field, with dog park, sports store and indoor gym around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for play ground, with daycare, school and dorm around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for pool party, with observation deck, market and watermelon field around.", "This yard is for play ground, with daycare, school and dorm around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for pool party, with observation deck, market and watermelon field around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for flying carpet, with café, dog park and observation deck around.", "This yard is for farming field, with farms and clinic for plants around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for maze, with café, dog park and observation deck around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for pool party, with observation deck, market and watermelon field around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for nothing, with marshmallow trampoline around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for flying carpet, with café, dog park and observation deck around.", "This yard is for nothing, with marshmallow trampoline around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for play ground, with daycare, school and dorm around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for play ground, with daycare, school and dorm around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for farming field, with farms and clinic for plants around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for maze, with café, dog park and observation deck around.", "This yard is for test field, with clinic for plants and seed market around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for sports field, with dog park, sports store and indoor gym around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for farming field, with farms and clinic for plants around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for sports field, with dog park, sports store and indoor gym around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for flying carpet, with café, dog park and observation deck around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for pool party, with observation deck, market and watermelon field around.", "This yard is for maze, with café, dog park and observation deck around.", "This yard is for play ground, with daycare, school and dorm around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for pool party, with observation deck, market and watermelon field around.", "This yard is for maze, with café, dog park and observation deck around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for flying carpet, with café, dog park and observation deck around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for sports field, with dog park, sports store and indoor gym around.", "This yard is for play ground, with daycare, school and dorm around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for farming field, with farms and clinic for plants around.", "This yard is for play ground, with daycare, school and dorm around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for play ground, with daycare, school and dorm around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for play ground, with daycare, school and dorm around.", "This yard is for sports field, with dog park, sports store and indoor gym around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for pool party, with observation deck, market and watermelon field around.", "This yard is for flying carpet, with café, dog park and observation deck around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for pool party, with observation deck, market and watermelon field around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for nothing, with marshmallow trampoline around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for self farming, with clinic for plants and seed market around.", "This yard is for sports field, with dog park, sports store and indoor gym around.", "This yard is for flower garden, with clinic for plants and painting studio around.", "This yard is for flying carpet, with café, dog park and observation deck around.", "This yard is for gathering space, with storage, public restroom, outdoor kitchen and market around.", "This yard is for tree warship, with café and clinic for human around.", "This yard is for rental farmland, with clinic for plants and seed market,  around.", "This yard is for self farming, with clinic for plants and seed market around."];
+
+// console.log(textCollection[1]);
+
+for (let i = 0; i < X.length; i++) {
+
+let XPx = Math.floor(X[i]* window.innerHeight *0.9 / 2400);
+let YPx = Math.floor( Y[i]* window.innerHeight *0.9 / 2400);
+let widthPx = Math.floor(width[i]* window.innerHeight *0.9 / 2400 );
+let heightPx = Math.floor(height[i]* window.innerHeight *0.9 / 2400);
+
+allXPxValues.push(XPx);
+allYPxValues.push(YPx);
+allwidthPxValues.push(widthPx);
+allheightPxValues.push(heightPx);
+
+}
+
+
+// Create an array to hold the rects
+// const allrec = [];
+
+// const colors = ['#000000'];
+// const opacities = [1];
+
+// Define the text to display
+
+
+// Loop through and create each rectangule
+for (let i = 0; i < allXPxValues.length; i++) {
+  const Recs = document.createElement('Rec');
+  Recs.style.position = "absolute";
+  Recs.style.cursor = "pointer";
+
+  Recs.style.left = `${allXPxValues[i % allXPxValues.length]}px`;
+  Recs.style.top = `${allYPxValues[i % allYPxValues.length]}px`;
+  Recs.style.width = `${allwidthPxValues[i % allwidthPxValues.length]}px`;
+  Recs.style.height = `${allheightPxValues[i % allheightPxValues.length]}px`;
+
+  Recs.style.backgroundColor = '#3ec961';
+  Recs.style.opacity = '0';
+
+
+
+
+    
+  Recs.addEventListener('mouseover', () => {
+    Recs.style.opacity = '1';
+    console.log('Mouseover event triggered!');  
+
+    const textInput = document.getElementById("textInput");
+    textInput.textContent = textCollection[i % textCollection.length];
+    textInput.style.display = 'block';
+    console.log(textInput);
+  });
+
+  Recs.addEventListener('mouseout', () => {
+    Recs.style.opacity = '0.1';
+    textInput.style.display = 'none';
+
+  });
+    // var text = document.getElementById('Texts');
+    // text.style.visibility = 'visible';
+
+    rects.appendChild(Recs);
+};
+
+
+}
+
+
+
+
+
+
+
 
 // Create an element for displaying the tooltip
 // var tooltip = document.getElementById("tooltip-container");
 // document.body.appendChild(tooltip);
   
-
-// Draw the rectangles
-  for (let i = 0; i <= width.length; i++) {
+/////////////////////////
+// // Draw the rectangles
+//   for (let i = 0; i <= width.length; i++) {
   
-    let XPx = Math.floor(X[i] * window.innerHeight / 24000 * 1.15 );
-    let YPx = Math.floor( Y[i]  * window.innerHeight / 48000 * 1.15 );
-    let widthPx = Math.floor(width[i] * window.innerHeight / 24000 * 1.15 );
-    let heightPx = Math.floor(height[i] * window.innerHeight / 48000 * 1.15 );
+//     let XPx = Math.floor(X[i] * window.innerHeight / 24000 * 1.15 );
+//     let YPx = Math.floor( Y[i]  * window.innerHeight / 48000 * 1.15 );
+//     let widthPx = Math.floor(width[i] * window.innerHeight / 24000 * 1.15 );
+//     let heightPx = Math.floor(height[i] * window.innerHeight / 48000 * 1.15 );
   
-    ctx.fillRect(XPx, YPx, widthPx, heightPx);
-    ctx.fillStyle = 'rgba(0, 0, 0, 0)';
+//     ctx.fillRect(XPx, YPx, widthPx, heightPx);
+//     ctx.fillStyle = 'rgba(0, 0, 0, 0)';
 
-    // allXPxValues.push(XPx);
-    // allYPxValues.push(YPx);
-    // allwidthPxValues.push(widthPx);
-    // allheightPxValues.push(heightPx);
+//     // allXPxValues.push(XPx);
+//     // allYPxValues.push(YPx);
+//     // allwidthPxValues.push(widthPx);
+//     // allheightPxValues.push(heightPx);
   
-    allrec.push(ctx);
-    }
+//     allrec.push(ctx);
+//     }
 
-canvas.addEventListener("mousemove", function(event) {
+//   rects.addEventListener("mousemove", function(event) {
 
-  var CvsBounding = canvas.getBoundingClientRect();
-  var mouseX = event.clientX - CvsBounding.left; // Define mouseX as the current x-coordinate of the mouse relative to the page
-  var mouseY = event.clientY - CvsBounding.top;
+//   var CvsBounding = canvas.getBoundingClientRect();
+//   var mouseX = event.clientX - CvsBounding.left; // Define mouseX as the current x-coordinate of the mouse relative to the page
+//   var mouseY = event.clientY - CvsBounding.top;
 
-  // console.log("mouseX" + mouseX);
-  // console.log("mouseY" +mouseY);
+//   // console.log("mouseX" + mouseX);
+//   // console.log("mouseY" +mouseY);
 
-for (let i = 0; i <= width.length; i++) {
+// for (let i = 0; i <= width.length; i++) {
 
-  if (Math.floor(mouseX) >= X[i] && Math.floor(mouseX) <= X[i] + width[i] &&
-  Math.floor(mouseY) >= Y[i] && Math.floor(mouseY) <= Y[i] + height[i]) 
-{
-  // showRect(rect);
-    allrec[i].globalAlpha = 1;
-    console.log("showRec"+i);
+//   if (Math.floor(mouseX) >= X[i] && Math.floor(mouseX) <= X[i] + width[i] &&
+//   Math.floor(mouseY) >= Y[i] && Math.floor(mouseY) <= Y[i] + height[i]) 
+// {
+//   // showRect(rect);
+//     allrec[i].globalAlpha = 1;
+//     console.log("showRec"+i);
 
-  // Show the corresponding text for the current rectangle
-  // showText(textCollection[i], 50, 50 );
-}
-else{
-  allrec[i].globalAlpha = 0;
-}
-}
+//   // Show the corresponding text for the current rectangle
+//   // showText(textCollection[i], 50, 50 );
+// }
+// else{
+//   allrec[i].globalAlpha = 0;
+// }
 
-});
+// }
+// });
+///////////////////////
 
-}
+
+

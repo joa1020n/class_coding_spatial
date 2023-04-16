@@ -568,7 +568,7 @@ body {
 
 /* Define the CSS style for the rectangles */
 
-canvas {
+/* canvas {
     position: fixed;
     height:90vh;
     width:90vh;
@@ -577,13 +577,11 @@ canvas {
     border: 5px solid black;
     margin : 0;
     padding : 0;
-  
-    cursor: pointer;
-    
+      
     z-index: 9999;
-  }
+  } */
 
-  #canvas-container {
+  #rectContainer {
     position: fixed;
     height:90vh;
     width:90vh;
@@ -592,5 +590,8 @@ canvas {
     border: 5px solid black;
     margin : 0;
     padding : 0;
+    cursor: pointer;
+
+    z-index: 9999;
 }
   
