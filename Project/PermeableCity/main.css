@@ -8,7 +8,7 @@ font-family: 'Rubik Pixels', cursive;
 .noChoiceBody{
     margin:0 0;
     height:100vh;
-    background-color:#f2f1df;
+    background-color:white;
     /* background-image: url(../PermeableCity/Assets/Sign/BackgroundImg_01.png);
     background-repeat: repeat; */
 }
@@ -58,6 +58,18 @@ ButtonContainer{
 
 /* fonts */
 
+.h0{
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-style:200;
+    font-size:40px;
+    font-weight: 800;
+    text-decoration-line: none;
+
+    position:fixed;
+    left: 2vw;
+}
+
 .h1{
     color:black;
     font-family: 'Montserrat', sans-serif;
@@ -69,7 +81,8 @@ ButtonContainer{
 
 .h2{
     font-family: 'Montserrat', sans-serif;
-    font-size:100px;
+    font-size: 12vh;
+    font-weight:600;
 
     margin-top:0;
     margin-left: 0px;
@@ -79,8 +92,11 @@ ButtonContainer{
     }
 
 .h3{
-    font-family: 'Rubik Pixels', cursive;
-    font-size:300px;
+    font-family: 'Montserrat', sans-serif;
+    /* 'Rubik Pixels', cursive */
+    font-size:12vh;
+    font-weight:600;
+    text-decoration: underline dotted;
 
     margin-top:0;
     margin-left: 0px;
@@ -103,12 +119,13 @@ ButtonContainer{
 .button{
     background-color: #00c977;
     font-family: 'Montserrat', sans-serif;
+    font-weight:600;
     font-size:35px;
     margin-top:5px;
     margin-bottom: 5px;
     margin-left: 20px;
     margin-right: 20px;
-    padding:10px 20px;
+    padding:20px 20px;
 
     text-decoration-line: underline;
     color:white;
@@ -117,11 +134,13 @@ ButtonContainer{
 
 .p1{
     font-family: 'Montserrat', sans-serif;
-    font-size:60px;
+    font-weight: 600;
+    font-size: 1.5vh;
     margin:0;
 
     text-decoration-line: none;
-    color:white;
+    color:black;
+    max-width: 40vw;
 }
 
 .p2{
@@ -356,31 +375,37 @@ ImgSquareContainer{
 /* Individual TextBox */
 
 .LeftDescriptionContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #6fa331;
     position:relative;
 
     margin: 0;
     padding-left: 2vw;
     padding-right: 5vw;
-    padding-top:60px;
-    height:30vh;
+    height:25vh;
     align-items: left;
 
-    z-index: 1 ;
+    z-index: 5 ;
 
 
 }
 
 .LeftCoverTitleTextContainer{
-    background-color: #f2f1df;
+    background-color: white;
     margin:0;
     position:relative;
 
     padding-left: 2vw;
     padding-right: 5vw;
-    padding-top:60px;
-    height:60vh;
+    padding-top:5vh;
+    height:90vh;
     align-items: left;
+
+    display:flex;
+    flex-direction: column;
+    align-content: flex-start;
 }
 
 /* individual Image */
