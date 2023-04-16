@@ -64,3 +64,7 @@ if (PersonalName && PersonalImg) {
 	document.getElementById('Personal').innerText = PersonalName;
 	document.getElementById('PersonalImg').setAttribute('src', PersonalImg);
 }
+
+
+
+

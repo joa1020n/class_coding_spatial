@@ -46,7 +46,7 @@ ButtonContainer{
     padding-right: 2vw;
 
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: row;
     gap:90px;
 }
@@ -387,8 +387,7 @@ ImgSquareContainer{
     height:25vh;
     align-items: left;
 
-    z-index: 5 ;
-
+    z-index: 999 ;
 
 }
 
@@ -414,7 +413,7 @@ ImgSquareContainer{
 {   position:fixed;
     height:90vh;
     width:90vh;
-    right:0px;
+    right:0;
     bottom:0;
     /* size-adjust:inherit; */
 }
@@ -566,3 +565,32 @@ body {
     text-decoration-line: underline;
     color:white;
 } */
+
+/* Define the CSS style for the rectangles */
+
+canvas {
+    position: fixed;
+    height:90vh;
+    width:90vh;
+    right:0px;
+    bottom:0;
+    border: 5px solid black;
+    margin : 0;
+    padding : 0;
+  
+    cursor: pointer;
+    
+    z-index: 9999;
+  }
+
+  #canvas-container {
+    position: fixed;
+    height:90vh;
+    width:90vh;
+    right:0px;
+    bottom:0;
+    border: 5px solid black;
+    margin : 0;
+    padding : 0;
+}
+  

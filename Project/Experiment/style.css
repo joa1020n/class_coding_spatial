@@ -48,3 +48,28 @@ button {
   max-width: 300px;
   max-height: 300px;
 }
+
+
+/* Define the CSS style for the rectangles */
+.rectangle {
+  position: absolute;
+  /* width: 500px;
+  height: 500px; */
+  /* right:200px;
+  bottom:500px; */
+  border: 9px solid yellow;
+
+  z-index:9999;
+}
+
+canvas {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+
+  cursor: pointer;
+
+}

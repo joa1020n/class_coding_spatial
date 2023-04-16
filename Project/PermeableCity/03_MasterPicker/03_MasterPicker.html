@@ -15,8 +15,9 @@
    
     <!-- link to css -->
     <link rel="stylesheet" href="../main.css">
+    <script src="../03_MasterPicker/02_MasterPicker.js"></script>
 
-    <script src="./02_MasterIntro.js"></script>
+
   </head>
 
   <body class="noChoiceBody">
@@ -28,13 +29,11 @@
       <a href="../00_intro/00_3_About us/" class="h1"> About Us </a>
     </header>
   
-      <!-- <div class="LeftRightContainer"> -->
-  
+
         <div class="TwoTextBox">
-  
-          <div class="LeftDescriptionContainer">
-            <p class="p1">This is a yard aimed for xxx, </p> 
-            <p class="p1"><br>with xxx, xxx and xxx around</p>
+
+          <div class="LeftDescriptionContainer" >
+            <p  id="tooltip-container"></p>
           </div>
   
           <div class="LeftCoverTitleTextContainer" style="padding-top:20vh;">
@@ -43,10 +42,12 @@
           </div>
   
         </div>
-  
-        <img src="../Assets/MasterPlan/MasterPlan_2.jpg" class="CoverImg"></img>
-  
-      <!-- </div> -->
+
+        <div id="canvas-container">
+        <canvas id="myCanvas" style="z-index:9999;" ></canvas>
+        <img src="../Assets/MasterPlan/MasterPlan_2.png"  class="CoverImg" ></img>
+      </div>
+
   
       <ButtonContainer>
         <a href="../02_MasterIntro/02_MasterIntro.html" class="button"> back </a> 
