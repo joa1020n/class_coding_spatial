@@ -67,7 +67,7 @@ ButtonContainer{
     text-decoration-line: none;
 
     position:fixed;
-    left: 2vw;
+    left: 6vw;
 }
 
 .h1{
@@ -100,7 +100,7 @@ ButtonContainer{
 
     margin-top:0;
     margin-left: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 5vh;
 
     padding:0 0;
 }
@@ -135,12 +135,12 @@ ButtonContainer{
 .p1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 1.5vh;
+    font-size: 1.75vh;
     margin:0;
 
     text-decoration-line: none;
     color:black;
-    max-width: 40vw;
+    max-width: 50vw;
 }
 
 .p2{
@@ -230,6 +230,11 @@ ButtonContainer{
    width: 90vh;
    height:90vh;
 }
+
+.Imginrow{
+    width: 50vh;
+    height:50vh;
+ }
 
 .ImgwithTextAbove{
     width: 90vh;
@@ -382,9 +387,9 @@ ImgSquareContainer{
     position:relative;
 
     margin: 0;
-    padding-left: 2vw;
+    padding-left: 6vw;
     padding-right: 5vw;
-    height:25vh;
+    height:40vh;
     align-items: left;
 
     z-index: 999 ;
@@ -396,7 +401,7 @@ ImgSquareContainer{
     margin:0;
     position:relative;
 
-    padding-left: 2vw;
+    padding-left: 6vw;
     padding-right: 5vw;
     padding-top:5vh;
     height:90vh;
@@ -404,7 +409,7 @@ ImgSquareContainer{
 
     display:flex;
     flex-direction: column;
-    align-content: flex-start;
+    justify-content: flex-end;
 }
 
 /* individual Image */
@@ -595,3 +600,24 @@ body {
     z-index: 9999;
 }
   
+.stylecontainer{
+    /* position: fixed; */
+    height:90vh;
+    width: 100vw;;
+    right:0px;
+    bottom:0;
+    margin : 0 2vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-items: center; */
+    gap:2vw;
+    flex-wrap: wrap;
+}
+
+.stylechild{
+    height:30vw;
+    width:30vw;
+
+}
