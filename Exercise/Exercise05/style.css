@@ -1,0 +1,207 @@
+
+    *{
+        box-sizing: border-box;
+    }
+        
+    body{
+        font-family: 'Glegoo', serif;
+        font-size: 200;
+        margin: 0px 0px;
+    }
+    
+    .uppercase {
+        text-transform: uppercase;
+        }
+    
+    .header{
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        top: 0px;
+        height: 100vh;
+        background-color:#ffffff;
+        position: relative;
+        margin: 0px 10px;
+        align-items: center;
+    }
+    
+    .mooncontainer{
+        position:fixed;
+    
+    }
+    round1{
+        z-index: 3;
+        background-image: url("../LandingPage/assets/img/round.png");
+        background-size: contain;
+        height:30vh;
+        width: 30vh;
+        position:fixed;
+        left: 10vw;
+        top:10vh;
+    }
+    
+    moon2{
+        background-image: url("../LandingPage/assets/img/moon-near-side.png");
+        background-size: contain;
+        position:fixed;
+        height:30vh;
+        width: 30vh;
+        position:fixed;
+        left: 10vw;
+        top:10vh;
+    
+    }
+    
+    .changetomoon:hover{
+        opacity: 1;
+        animation-name: changetomoon;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-duration: 4s;
+    }
+    
+    @keyframes changetomoon{
+        0% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+    
+    .introduce{
+        display: flex;
+        background-color: white;
+        position:fixed;
+        width: 60vw;
+        justify-content: space-between;
+        align-items: center;
+        margin:0;
+        margin-left: 10px;
+        left: 30vw;
+        top:30vh;
+        height: 10vh;
+    }
+    
+    nametag{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color:white;
+        opacity: 100%;
+        position: relative;
+        height:150px;
+        width: 400px;
+        border-bottom-style: solid;
+        border-bottom-color: #2934A0;
+        border-bottom-width: 10px;
+    }
+    
+    .movetoright:hover{
+        opacity: 1;
+        animation-name: movetoright;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-duration: 6s;
+    }
+    
+    @keyframes movetoright{
+        0%{transform: translateX(0px);}
+        50% {transform: translateX(100%);}
+        100% {transform: translateX(0px);}
+    }
+    
+    photo{
+        /* display: flex; */
+        /* flex-direction: row; */
+        background-image: url("assets/img/ProfilePhoto.jpg");
+        background-size: contain;
+        opacity: 100%;
+        height:10vh;
+        width: 10vh;
+    }
+    
+    /* 
+    .blank{
+        height:300px;
+        width:100%;
+        background-color: white;
+    } */
+    
+    .maincontent{
+        position:fixed;
+        bottom: 0;
+        margin:0;
+        padding-left: 3vw;
+        padding-top: 10vh;
+        display: flex;
+        width : 100vw;
+        height:85vh;
+        z-index: 99;
+        background-color: #2934A0;
+        flex-direction: row;
+        gap:10vw;
+        justify-content:flex-start;
+    
+    }
+    
+    
+    h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 2vh;
+        color:#2934A0;
+        position: relative;
+        text-align: left;
+        line-height: 25px;
+    }
+    
+    h2{
+        font-size: 2vh;
+        color:white;
+        text-align:left;
+        position: relative;
+        margin-left: 30px;
+    }
+    
+    h3{
+        font-size: 30px;
+        color:white;
+        text-align:left;
+        position: relative;
+        margin-left: 30px;
+        text-decoration: none;
+    }
+    
+    p{
+        line-height: 25px;
+        font-size: 30px;
+        margin: 5px 0px;
+    }
+
+    .nav{
+        background-color:white;
+        position:fixed;
+        height:5vh;
+        width:96vw;
+        margin-right:2vw;
+        top:0;
+        display:flex;
+        justify-content: flex-end;
+        align-items:center;
+    }
+    
+    .navtext{    
+        display: inline-block;
+        padding: 0;
+        color: #333;
+        border-radius: 5px;
+        font-size:2vh;
+        text-decoration: none;
+        height:3vh;
+      }
+    
+      a.selected {
+        background-color: #555;
+        color: #fff;
+      }
+      
+      a:hover {
+        background-color: #f16b22 ;
+      }

@@ -24,5 +24,50 @@ h2{
 .lead {font-style:italic;}
 
 .titleimage{
+    height:532px;
+    width:100vw;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: url("https://raw.githubusercontent.com/celestelayne/bug-free-meme/main/exercises/starter_code_lesson_1/cookie_recipe/cookies.jpg");
 }
+
+.mainbody{
+    position:fixed;
+    margin:0;
+    top:5vh;
+
+
+}
+.nav{
+    background-color:white;
+    position:fixed;
+    height:5vh;
+    width:100vw;
+    margin:0;
+    top:0;
+    display:flex;
+    justify-content: flex-end;
+    align-items: space-between;
+}
+
+.navtext{    
+    display: block;
+    padding: 20px;
+    color: #333;
+    border-radius: 5px;
+    font-size:2vh;
+    text-decoration: none;
+    align-items:center;
+    height:3vh;
+  }
+
+  a.selected {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  a:hover {
+    background-color: #f16b22 ;
+  }

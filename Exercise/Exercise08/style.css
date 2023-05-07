@@ -1,9 +1,20 @@
 .container {
+    position:fixed;
     max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    top:40vh;
+    left:40vw;
+    align-items: center;
+    width:20vw;
   }
-  
+  .picker{
+    display:flex;
+    justify-content: space-between;
+
+  }
   ul {
     list-style: none;
     padding: 0;
@@ -13,23 +24,24 @@
     margin: 10px 0;
   }
   
-  a {
+  /* a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ccc;
     color: #333;
     text-decoration: none;
     border-radius: 5px;
   }
-  
-  a.selected {
-    background-color: #555;
-    color: #fff;
-  }
-  
-  a:hover {
-    background-color: #999;
-  }
+   */
+ 
+button{
+
+    width: 10vh;
+    height:5vh;
+   }
+  .command{
+    font-size: 2vh;
+
+   }
   
   #selected-img {
     max-width: 100%;
@@ -39,4 +51,37 @@
   #next-button {
     display: none;
   }
+
+.nav{
+    background-color:white;
+    position:fixed;
+    height:5vh;
+    width:100vw;
+    margin:0;
+    padding:0;
+    left:0;
+    top:0;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navtext{    
+    display: block;
+    padding: 10px;
+    color: #333;
+    border-radius: 5px;
+    font-size:2vh;
+    text-decoration: none;
+    align-items:center;
+    height:3vh;
+  }
+
+  a.selected {
+    background-color: #555;
+    color: #fff;
+  }
   
+  a:hover {
+    background-color: #f16b22 ;
+  }
