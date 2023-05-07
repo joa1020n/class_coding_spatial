@@ -31,7 +31,7 @@ header{
     justify-content: flex-end;
     flex-direction: row;
     align-items: center;
-    gap:120px;
+    gap:10vw;
 }
 
 ButtonContainer{
@@ -89,6 +89,25 @@ ButtonContainer{
     margin-bottom: 0px;
 
     padding:0 0;
+    }
+
+    
+.h22{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12vh;
+    font-weight:600;
+
+    margin-top:0;
+    margin-left: 0px;
+    margin-bottom: 0px;
+
+    padding:0 0;
+    color:white; 
+    font-size: 5vh; 
+    max-width: 80vw; 
+    font-style:italic; 
+    position: relative; 
+    top: 3vh;
     }
 
 .h3{
@@ -232,8 +251,8 @@ ButtonContainer{
 }
 
 .Imginrow{
-    width: 50vh;
-    height:50vh;
+    width: 25vw;
+    height:25vw;
  }
 
 .ImgwithTextAbove{
@@ -275,7 +294,7 @@ ButtonContainer{
  }
 
 .picframe{
-    width: 15vw;
+    width: 20vw;
     margin: 0;
     padding: 0;
 }
@@ -319,7 +338,7 @@ ButtonContainer{
  /* personal space size selection */
  .PersonalSizeImgFrame{
     position:fixed;
-    bottom:35vh;
+    bottom:20vh;
     height:50vh;
     width:100vw;
     display:flex;
@@ -346,7 +365,29 @@ ButtonContainer{
     flex-direction: row;
 
  }
-
+ .pickercanvas{
+    position:fixed;
+    height:90vh;
+    width:90vh;
+    right:0;
+    bottom:0;
+}
+.picker{
+    position:absolute;
+    height:90vh;
+    width:90vh;
+    right:0;
+    bottom:0;
+}
+.pickerImg{  
+    position:absolute;
+    height:90vh;
+    width:90vh;
+    right:0;
+    bottom:0;
+    margin:0;
+    padding:0;    
+}
 
 /* single image */
 
@@ -364,11 +405,11 @@ ImgSquareContainer{
 /* textbox container */
 
 .TwoTextBox{
-    position:fixed;
+    position:relative;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height:90vh;
+    height:100vw;
     width:100vw;
     bottom:0;
     margin:0;
@@ -380,16 +421,16 @@ ImgSquareContainer{
 /* Individual TextBox */
 
 .LeftDescriptionContainer{
+    position:relative;
     display:flex;
     flex-direction: column;
     justify-content: center;
     background-color: #6fa331;
-    position:relative;
 
     margin: 0;
     padding-left: 6vw;
     padding-right: 5vw;
-    height:40vh;
+    height:90vh;
     align-items: left;
 
     z-index: 999 ;
@@ -411,6 +452,24 @@ ImgSquareContainer{
     flex-direction: column;
     justify-content: flex-end;
 }
+
+.archistep{
+    background-color: white;
+    margin:0;
+    position:relative;
+
+    padding-left: 6vw;
+    padding-right: 5vw;
+    padding-top:5vh;
+    height:90vh;
+    align-items: left;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
 
 /* individual Image */
 
@@ -521,70 +580,8 @@ body {
   }
   
 
-}
 
 
- /* Style the custom radio button */
- /* .radio-button {
-    display: inline-block;
-    position: relative;
-    padding-left: 25px;
-    margin-right: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    user-select: none;
-  } */
-
-  /* Style the custom radio button dot */
-  /* .radio-button::before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
-    border: 2px solid #aaa;
-    border-radius: 50%;
-    background-color: #fff;
-  } */
-
-  /* Style the custom radio button dot when selected */
-  /* .radio-button input:checked + ::before {
-    background-color: yellow;
-  } */
-
-
-  /* button {
-    border-width: 0;
-    background-color: #00c977;
-    font-family: 'Montserrat', sans-serif;
-    font-size:35px;
-    margin-top:5px;
-    margin-bottom: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding:10px 20px;
-
-    text-decoration-line: underline;
-    color:white;
-} */
-
-/* Define the CSS style for the rectangles */
-
-/* canvas {
-    position: fixed;
-    height:90vh;
-    width:90vh;
-    right:0px;
-    bottom:0;
-    border: 5px solid black;
-    margin : 0;
-    padding : 0;
-      
-    z-index: 9999;
-  } */
 
   #rectContainer {
     position: fixed;
@@ -621,3 +618,619 @@ body {
     width:30vw;
 
 }
+}
+
+
+
+@media (max-width: 1200px) {
+
+    /* body setting */
+    .noChoiceBody{
+        margin:0 0;
+        /* height:100vh; */
+        background-color:white;
+        /* background-image: url(../PermeableCity/Assets/Sign/BackgroundImg_01.png);
+        background-repeat: repeat; */
+    }
+    
+    
+    /* header and footer */
+    header{
+        position: fixed ;
+        background-color: white;
+        top:0;
+        margin:0;
+        height: 10vh;
+        width:90vw; 
+        padding-top: 0;
+        padding-left:5vw;
+        padding-right:5vw;
+        z-index: 9999;
+    
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+        gap:120px;
+    }
+    
+    ButtonContainer{
+        position: fixed ;
+        z-index:9999;
+        width:96vw;
+        left:0;
+        bottom:5vh;
+        margin:0;
+        padding:0;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    
+        display:flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        gap:90px;
+    }
+    
+     ButtonContainer a:hover {
+        background-color: #ed9303;
+      }
+    
+    
+    /* fonts */
+    
+    .h0{
+        color:black;
+        font-family: 'Montserrat', sans-serif;
+        font-style:200;
+        font-size:2vh;
+        font-weight: 800;
+        text-decoration-line: none;
+    
+        position:absolute;
+        left: 3vw;
+    }
+    
+    .h1{
+        color:black;
+        font-family: 'Montserrat', sans-serif;
+        font-style:200;
+        font-size:2vw;
+        text-decoration-line: none;
+    }
+    
+    
+    .h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10vw;
+        font-weight:600;
+    
+        margin-top:0;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    
+        padding:0 0;
+        }
+    
+    .h3{
+        font-family: 'Montserrat', sans-serif;
+        /* 'Rubik Pixels', cursive */
+        font-size:10vw;
+        font-weight:600;
+        text-decoration: underline dotted;
+        max-width: 100vw;
+    
+        margin-top:0;
+        margin-left: 0px;
+        margin-bottom: 5vh;
+    
+        padding:0 0;
+
+        padding-top:10vh;
+        padding-left:2vw;
+
+    }
+    
+    .h4{
+        font-family: 'Rubik Pixels', cursive;
+        font-size:90px;
+        
+        margin-top: 60px;
+        margin-bottom: 0px;
+    
+        
+        padding:0 0;
+    }   
+    
+    .button{
+        background-color: #00c977;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:600;
+        font-size:35px;
+        margin-top:5px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding:20px 20px;
+    
+        text-decoration-line: underline;
+        color:white;
+        cursor: pointer;
+    }
+    
+    .p1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 2vw;
+        margin:0;
+        padding-left:5vw;
+    
+        text-decoration-line: none;
+        color:black;
+        max-width: 80vw;
+    }
+    
+    .p2{
+        font-family: 'Montserrat', sans-serif;
+        font-size:30px;
+        margin:0;
+    
+        display:flex ;
+        justify-content: flex-start;
+        padding:40px;
+    
+        position: relative;
+        bottom:8vh;
+        text-align: center;
+    
+        text-decoration-line: 1px;
+        color:white;
+        text-decoration-color: #59594f;
+    }
+    
+    /* .p3{
+        font-family: 'Montserrat', sans-serif;
+        font-size:90px;
+        margin:0;
+    
+        display:flex ;
+        justify-content: center;
+    
+        position: relative;
+        bottom:8vh;
+    
+        text-decoration-line: 1px;
+        color:#59594f;
+        text-decoration-color: #59594f;
+    
+        z-index: 2;
+    } */
+    
+    /* whole page container */
+    .LeftRightContainer{
+        position: fixed;
+        height:90vh;
+        bottom:0;
+        width:100vw;
+        margin:0;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: bottom;
+    }
+    
+    .UpdownContainer{
+        position: fixed;
+        height:80vh;
+        bottom:5vh;
+        width:90vw;
+        margin-top:0;
+        margin-bottom:0;
+        margin-left:0px;
+        margin-right:0px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: bottom;
+    }
+    
+    /* image container */
+    
+    /* three images */
+    
+    .threeImgFrame{
+        position: absolute;
+        width:90vh;
+        height:270vh;
+        right:0;
+        top:10vh;
+    
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap:0px;
+    }
+    
+    .ImgChild{
+       width: 90vh;
+       height:90vh;
+    }
+    
+    .Imginrow{
+        width: 30vh;
+        height:30vh;
+     }
+    
+    .ImgwithTextAbove{
+        width: 90vh;
+    }
+    
+    
+    /* picker for several images */
+    .PickerImgFrame{
+        background-color: white;
+        position: relative;
+        width:100vw;
+        height:270vh;
+        right:0;
+        top:10vh;
+    
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap:5vw;
+    
+    } 
+    
+    /* archi part options with text for selection */
+     .OptionwithTextAbove{
+        height:fit-content;
+        margin: 0 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    
+        border-style: dotted;
+        border-radius: 0;
+        border-color: white;
+        border-width: 12px;
+     }
+    
+    .picframe{
+        width: 80vw;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .picframeforthree{
+        width: 25vw;
+        margin: 0;
+        padding: 0;
+    }
+    
+     .optiontext{
+        color: #59594f;
+        text-decoration: none;
+        margin: 0 50px;
+        font-size: 50px;
+        /* background-color: white; */
+        display:block;
+        width:fit-content;
+    
+        position:relative;
+        bottom:1vh;
+    }
+    
+     .optiontext:hover{
+        background-position: 5px;
+        background-color: #ed9303;
+        cursor: pointer;
+     }
+    
+     .OptionwithTextAbove:hover{
+        border-color: #ed9303;
+    
+     }
+    
+    
+      /* Hide the default radio button */
+      input[type="radio"] {
+        display: none;
+      }
+    
+     /* personal space size selection */
+     .PersonalSizeImgFrame{
+        position:relative;
+        width:100vw;
+        display:flex;
+        justify-content: center;
+        gap:5vw;
+        flex-direction: column;
+        top:50vh;
+        z-index: 2;
+     }
+    
+    
+     /* selected part */
+     .selectedContainer{
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap:5vw;
+        flex-direction: column;
+     }
+    
+     .selectedName{
+        display:flex;
+        justify-content: space-between;
+        gap:5vw;
+        flex-direction: row;
+    
+     }
+    
+    
+    /* single image */
+    
+    ImgSquareContainer{
+    
+        position:fixed;
+        height:90vh;
+        width:90vh;
+        bottom:0;
+        right:0;
+        margin:0;
+        padding:0;
+    }
+    
+    /* textbox container */
+    
+    .TwoTextBox{
+        background-color:#ed9303;
+        position:relative;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        /* height:40vh; */
+        width:100vw;
+        /* bottom:0; */
+        margin:0;
+        top:10vh;
+    
+        z-index: -1 ;
+    
+    }
+    
+    /* Individual TextBox */
+    
+    .LeftDescriptionContainer{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #6fa331;
+        position:relative;
+        top:0;
+        width:100vw;
+    
+        margin: 0;
+        padding:0;
+        /* padding-left: 6vw; */
+        /* padding-right: 5vw; */
+        height:50vw;
+        align-items: left;
+    
+        z-index: 999 ;
+    
+    }
+    
+    .LeftCoverTitleTextContainer{
+        background-color: white;
+        margin:0;
+        position:relative;
+    
+        padding-left: 6vw;
+        padding-right: 5vw;
+        padding-top:5vh;
+        height:50vw;
+        align-items: left;
+    
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .archistep{
+        background-color: white;
+        margin:0;
+        position:relative;
+        top:10vh;
+    
+        padding-left: 6vw;
+        padding-right: 5vw;
+        padding-top:5vh;
+        /* height:90vh; */
+        align-items: left;
+    
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    /* individual Image */
+    
+    .CoverImg
+    {   position:relative;
+        height:100vw;
+        width:100vw;
+        right:0;
+        top:15vw;
+
+        /* size-adjust:inherit; */
+    }
+
+    .pickercanvas{
+        position:relative;
+        height:100vw;
+        width:100vw;
+        left:0;
+        top:0;
+    }
+    
+    .picker{
+        position:absolute;
+        height:100vw;
+        width:100vw;
+        left:0;
+        top:0;
+        margin:0;
+        padding:0;
+        /* opacity: 0; */
+    }
+    .pickerImg{  
+        position:absolute;
+        height:100vw;
+        width:100vw;
+        top:0;
+        left:0;
+        margin:0;
+        padding:0;    
+    }
+    
+    .SubCoverText{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        width:60vw;
+    }
+    
+    
+    .titleTextboxright{
+        margin-top:0;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-right:120px;
+        text-align: right;
+    }
+    
+    
+    .textboxright{
+        margin-top:0;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-right:120px;
+        text-align: right;
+    
+    }
+    .locationText{
+        position:relative;
+        bottom: 120px;
+        left:30px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap:60px;
+        align-items: center;
+    }
+    
+    /* selection style */
+    
+    body {
+        font-family: sans-serif;
+      }
+      
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      p {
+        margin-top: 20px;
+      }
+      
+      #options {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      
+      .option {
+        font-family: 'Montserrat', sans-serif;
+        font-size:40px;
+        text-align: center;
+    
+        border: 2px solid black;
+        padding: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      
+      .option.selected {
+        background-color: yellow;
+      }
+      
+    
+      
+    
+    
+      
+      #choices {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+      
+      #choices img {
+        margin: 20px;
+        max-width: 300px;
+        max-height: 300px;
+      }
+      
+    
+    
+    
+    
+      #rectContainer {
+        position: absolute;
+        height:100vw;
+        width:100vw;
+        left:0px;
+        top:0;
+        border: 5px solid black;
+        margin : 0;
+        padding : 0;
+        cursor: pointer;
+    
+        z-index: 9999;
+    }
+      
+    .stylecontainer{
+        /* position: fixed; */
+        height:90vh;
+        width: 100vw;;
+        right:0px;
+        bottom:0;
+        margin : 0 2vw;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        /* align-items: center; */
+        gap:2vw;
+        flex-wrap: wrap;
+    }
+    
+    .stylechild{
+        height:80vw;
+        width:80vw;
+    
+    }
+    }
